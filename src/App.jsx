@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Login from './Components/Login/Login';
 
 
+
 const App = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const App = () => {
         <Header />
           <Routes>
             <Route path='/' element={ <Home /> }/>
-            <Route path='/' element={ <Login /> }/>
+            <Route path='/login/*' element={ <Login /> }/>
           </Routes>
         <Footer />
       </BrowserRouter>
